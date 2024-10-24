@@ -1,0 +1,170 @@
+body {
+  background-color: #61122f;
+  color: #fff;
+  font-family: "Oxygen", sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Header Styling */
+
+#header-nav {
+  background-color: #f6b319;
+}
+
+.navbar .container {
+  justify-content: left;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.navbar-header a img {
+  width: 150px;
+  height: 150px;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+}
+
+.navbar-brand a h1 {
+  font-family: "Lora", sans-serif;
+  color: #557c3e;
+  text-shadow: 1px 1px 1px #222;
+}
+
+.navbar-brand p span {
+  margin-top: 15px;
+  vertical-align: center;
+  font-size: 0.75em;
+}
+
+/* Footer Sytling */
+
+.panel-footer {
+  margin-top: 30px;
+  padding: 30px 50px;
+  background-color: #222;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#hours,
+#address {
+  line-height: 2;
+}
+
+#hours > div,
+#address > div {
+  font-size: 1.3em;
+}
+
+#address p {
+  color: #557c3e;
+  line-height: 1.8em;
+  font-size: 0.8em;
+}
+
+#testimonial p {
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+/* Menu Category Page*/
+
+#main-content h2 + div {
+  margin-bottom: 30px;
+}
+
+.single-category {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 0px auto 25px;
+}
+
+.single-category span {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.75;
+}
+
+.single-category:hover {
+  box-shadow: 5px 5px 4px #000;
+}
+
+/* Media Query */
+
+@media (min-width: 1024px) {
+  .navbar-header a img {
+    width: 125px;
+    height: 125px;
+  }
+  .navbar .container {
+    padding: 0 75px;
+  }
+  .navbar-brand p img {
+    width: 30px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .navbar-header a img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container {
+    padding: 0 50px;
+  }
+  .navbar-brand p img {
+    width: 25px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 766px) {
+  .navbar-header a img {
+    width: 75px;
+    height: 75px;
+  }
+  .navbar-brand p img {
+    width: 20px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 460px) {
+  .navbar-header a img {
+    width: 0px;
+    height: 0px;
+  }
+  .navbar-brand p img {
+    width: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-header a img {
+    width: 0px;
+    height: 0px;
+  }
+  .navbar-brand a h1 {
+    font-size: 1em;
+  }
+  .navbar-brand p img {
+    width: 10px;
+  }
+}
