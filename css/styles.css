@@ -6,6 +6,11 @@ body {
 
 .row {
   margin: 0;
+  justify-content: space-evenly;
+}
+
+#main-content {
+  padding-top: 25px;
 }
 
 /* Header Styling */
@@ -122,10 +127,36 @@ svg {
   margin-bottom: 25px;
 }
 
-/* Menu Category Page*/
-#main-content {
-  padding-top: 25px;
+/* Home Page */
+
+.home-tile {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 25px auto 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0%;
 }
+
+.home-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  opacity: 0.75;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.home-tile:hover {
+  box-shadow: 5px 5px 4px #000;
+}
+
+/* Menu Category Page*/
 
 #main-content h2 + div {
   margin-bottom: 30px;
@@ -158,7 +189,7 @@ svg {
 
 /* Media Query */
 
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
   .navbar .container {
     padding: 0 75px;
   }
@@ -173,9 +204,18 @@ svg {
     padding-left: 75px;
     padding-right: 75px;
   }
+  .vis-large {
+    width: 100%;
+  }
+  .vis-medium {
+    display: none;
+  }
+  .vis-small {
+    display: none;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .navbar .container {
     padding: 0 40px;
   }
@@ -197,6 +237,15 @@ svg {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .vis-large {
+    width: 100%;
+  }
+  .vis-medium {
+    display: none;
+  }
+  .vis-small {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
@@ -213,6 +262,18 @@ svg {
   #main-content {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .vis-large {
+    display: none;
+  }
+  .vis-medium {
+    width: 100%;
+  }
+  .vis-small {
+    display: none;
+  }
+  #map {
+    width: 80%;
   }
 }
 
@@ -235,11 +296,23 @@ svg {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .vis-large {
+    display: none;
+  }
+  .vis-medium {
+    display: none;
+  }
+  .vis-small {
+    width: 100%;
+  }
+  #map {
+    width: 80%;
+  }
 }
 
 @media (min-width: 371px) and (max-width: 520px) {
   .navbar .container {
-    padding: 0 20px;
+    padding: 0 15px;
   }
   .navbar-header a img {
     width: 0px;
@@ -261,6 +334,15 @@ svg {
   #main-content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .vis-large {
+    display: none;
+  }
+  .vis-medium {
+    display: none;
+  }
+  .vis-small {
+    width: 100%;
   }
 }
 
@@ -288,5 +370,14 @@ svg {
   #main-content {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .vis-large {
+    display: none;
+  }
+  .vis-medium {
+    display: none;
+  }
+  .vis-small {
+    width: 100%;
   }
 }
