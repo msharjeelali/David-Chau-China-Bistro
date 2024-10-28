@@ -1,134 +1,130 @@
 body {
-  background-color: #61122f;
+  background-color: #3c0b1d;
   color: #fff;
   font-family: "Oxygen", sans-serif;
 }
-
 .row {
   margin: 0;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-
 #main-content {
   padding-top: 25px;
 }
-
 /* Header Styling */
-
 .container {
   max-width: 100%;
 }
-
 .navbar .container {
   margin: 0;
   padding: 0 25px;
 }
-
 #header-nav {
-  background-color: #f6b319;
+  background-color: #f7c245;
 }
-
 .navbar-header a img {
   width: 150px;
   height: 150px;
 }
-
 .navbar-brand {
   margin: 0;
   padding-left: 10px;
   justify-self: start;
 }
-
 .navbar-brand a {
   text-decoration: none;
 }
-
 .navbar-brand a h1 {
   font-family: "Lora", sans-serif;
   color: #557c3e;
   text-shadow: 1px 1px 1px #222;
 }
-
 .navbar-brand p span {
   margin-top: 15px;
   vertical-align: center;
   font-size: 0.75em;
 }
-
 .navbar-nav {
   margin-left: auto;
 }
-
 svg {
   width: 2em;
   height: 2em;
   display: block;
+  color: #000;
 }
-
 .nav-link {
   justify-items: center;
 }
-
 .nav-item a {
   text-decoration: none;
   color: #951c3e;
 }
-
 #phone a {
   font-size: 1.8em;
-}
-
-.nav-item a:hover {
-  box-shadow: 5px 5px 2px;
-}
-
-#phone a {
   text-align: right;
 }
-
 #phone div {
   color: #557c3e;
   text-align: right;
   padding-right: 15px;
 }
-
+.nav-item a:hover {
+  box-shadow: 5px 5px 2px #000;
+}
+#phone-con {
+  display: inline;
+  margin-right: 15px;
+}
+#phone-small {
+  text-align: center;
+  background-color: #f7c245;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+#phone-small a {
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #951c3e;
+}
+#phone-small div {
+  color: #557c3e;
+  text-align: center;
+}
+#phone-small a:hover {
+  box-shadow: 5px 5px 2px #000;
+}
 .navbar-toggler {
   justify-self: flex-end;
 }
-
+.active {
+  box-shadow: 5px 5px 2px #000;
+}
 /* Footer Sytling */
-
 .panel-footer {
   margin-top: 30px;
   padding: 30px 50px;
   background-color: #222;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1em;
 }
-
 #hours,
 #address {
   line-height: 2;
 }
-
 #hours > div,
 #address > div {
   font-size: 1.3em;
 }
-
 #address p {
   color: #557c3e;
   line-height: 1.8em;
   font-size: 0.8em;
 }
-
 #testimonial p {
   font-style: italic;
   margin-bottom: 25px;
 }
-
 /* Home Page */
-
 .home-tile {
   position: relative;
   width: 100%;
@@ -139,29 +135,26 @@ svg {
   overflow: hidden;
   padding: 0%;
 }
-
 .home-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
+  height: 50px;
   text-align: center;
   background-color: #000;
   opacity: 0.75;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  padding-top: 10px;
 }
-
 .home-tile:hover {
   box-shadow: 5px 5px 4px #000;
 }
-
 /* Menu Category Page*/
-
 #main-content h2 + div {
   margin-bottom: 30px;
 }
-
 .single-category {
   position: relative;
   width: 200px;
@@ -169,8 +162,8 @@ svg {
   border: 2px solid black;
   overflow: hidden;
   margin: 0px auto 25px;
+  border-radius: 5px;
 }
-
 .single-category span {
   text-decoration: none;
   text-align: center;
@@ -182,13 +175,52 @@ svg {
   background-color: #000;
   opacity: 0.75;
 }
-
 .single-category:hover {
   box-shadow: 5px 5px 4px #000;
 }
-
+/* Single Category Page */
+.text-served {
+  font-size: 1em;
+  padding: 0 auto;
+}
+#single-card {
+  position: relative;
+}
+#category-code {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  width: 75px;
+  text-align: center;
+  border-radius: 50%;
+}
+.single-category-card {
+  margin: 20px auto;
+  padding: 0px;
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  height: 200px;
+  background-color: #c8943b;
+  color: #000;
+  overflow: hidden;
+}
+.single-category-image {
+  padding: 0px;
+}
+.single-category-text {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  justify-content: center;
+}
+.single-category-text h3 {
+  text-decoration: underline;
+  font-size: 1.2em;
+}
 /* Media Query */
-
 @media (min-width: 1200px) {
   .navbar .container {
     padding: 0 75px;
@@ -199,6 +231,9 @@ svg {
   }
   .navbar-brand p img {
     width: 30px;
+  }
+  .panel-footer {
+    padding: 30px 50px;
   }
   #main-content {
     padding-left: 75px;
@@ -213,8 +248,10 @@ svg {
   .vis-small {
     display: none;
   }
+  .single-category-text {
+    font-size: 1em;
+  }
 }
-
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar .container {
     padding: 0 40px;
@@ -233,6 +270,9 @@ svg {
   #phone a {
     font-size: 1.5em;
   }
+  .panel-footer {
+    padding: 30px 40px;
+  }
   #main-content {
     padding-left: 40px;
     padding-right: 40px;
@@ -246,8 +286,10 @@ svg {
   .vis-small {
     display: none;
   }
+  .single-category-text {
+    font-size: 1em;
+  }
 }
-
 @media (min-width: 769px) and (max-width: 991px) {
   .navbar .container {
     padding: 0 40px;
@@ -258,6 +300,9 @@ svg {
   }
   .navbar-brand p img {
     width: 25px;
+  }
+  .panel-footer {
+    padding: 30px 40px;
   }
   #main-content {
     padding-left: 40px;
@@ -275,8 +320,10 @@ svg {
   #map {
     width: 80%;
   }
+  .single-category-text {
+    font-size: 0.85em;
+  }
 }
-
 @media (min-width: 521px) and (max-width: 768px) {
   .navbar .container {
     padding: 0 20px;
@@ -291,6 +338,9 @@ svg {
   .navbar-toggler {
     width: 50px;
     padding: 5px;
+  }
+  .panel-footer {
+    padding: 30px 20px;
   }
   #main-content {
     padding-left: 20px;
@@ -308,8 +358,10 @@ svg {
   #map {
     width: 80%;
   }
+  .single-category-text {
+    font-size: 0.85em;
+  }
 }
-
 @media (min-width: 371px) and (max-width: 520px) {
   .navbar .container {
     padding: 0 15px;
@@ -331,6 +383,9 @@ svg {
     width: 50px;
     padding: 5px;
   }
+  .panel-footer {
+    padding: 30px 20px;
+  }
   #main-content {
     padding-left: 20px;
     padding-right: 20px;
@@ -344,8 +399,13 @@ svg {
   .vis-small {
     width: 100%;
   }
+  .single-category-text {
+    font-size: 0.7em;
+  }
+  #phone-small {
+    width: 90%;
+  }
 }
-
 @media (max-width: 370px) {
   .navbar .container {
     padding: 0 15px;
@@ -367,6 +427,9 @@ svg {
     width: 50px;
     padding: 5px;
   }
+  .panel-footer {
+    padding: 30px 15px;
+  }
   #main-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -379,5 +442,11 @@ svg {
   }
   .vis-small {
     width: 100%;
+  }
+  .single-category-text {
+    font-size: 0.7em;
+  }
+  #phone-small {
+    width: 90%;
   }
 }
