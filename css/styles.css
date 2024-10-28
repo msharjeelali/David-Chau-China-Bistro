@@ -35,7 +35,7 @@ body {
 }
 .navbar-brand a h1 {
   font-family: "Lora", sans-serif;
-  color: #557c3e;
+  color: #194200;
   text-shadow: 1px 1px 1px #222;
 }
 .navbar-brand p span {
@@ -64,7 +64,7 @@ svg {
   text-align: right;
 }
 #phone div {
-  color: #557c3e;
+  color: #194200;
   text-align: right;
   padding-right: 15px;
 }
@@ -116,7 +116,7 @@ svg {
   font-size: 1.3em;
 }
 #address p {
-  color: #557c3e;
+  color: #b7ff8d;
   line-height: 1.8em;
   font-size: 0.8em;
 }
