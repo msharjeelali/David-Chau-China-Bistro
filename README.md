@@ -9,9 +9,9 @@ https://github.com/jhu-ep-coursera/fullstack-course4. All the credits of this pr
 
 # Tools and Technologies
 
--HTML
--CSS
--BootStrap 5
+- HTML
+- CSS
+- BootStrap 5
 
 # Deployement
 
